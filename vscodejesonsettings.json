@@ -1,0 +1,52 @@
+{
+  "workbench.tree.renderIndentGuides": "none", // Reduces UI rendering load
+  "workbench.statusBar.visible": false, // Hides status bar to save resources
+  "chat.commandCenter.enabled": false,
+  "workbench.navigationControl.enabled": false,
+  "workbench.startupEditor": "none", // No welcome page = faster startup
+  "workbench.tips.enabled": false, // Disable VS Code tips for performance
+  "editor.guides.bracketPairs": false, // Improves performance by reducing UI rendering
+  "editor.fontLigatures": false, // Disabling can improve rendering speed
+  "editor.renderWhitespace": "none",
+  "editor.renderLineHighlight": "none",
+  "editor.stickyScroll.enabled": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.verticalScrollbarSize": 4, // Smaller scrollbar for less UI lag
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": "off", // Turning off for better typing response
+  "editor.tabSize": 2,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.smoothScrolling": false, // Improves performance on large files
+  "editor.inlineSuggest.enabled": false, // Disables AI suggestions for better speed
+  "editor.quickSuggestions": { "other": false, "comments": false, "strings": false }, // Disables unwanted suggestions
+  "editor.parameterHints.enabled": false, // Disables hints for a cleaner UI
+  "editor.codeLens": false, // Disabling can improve speed in large files
+  "editor.minimap.enabled": false, // **Disabling minimap improves performance**
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "window.menuBarVisibility": "toggle",
+  "files.autoSave": "onWindowChange",
+  "window.commandCenter": false,
+  "comments.useRelativeTime": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.layoutControl.enabled": false,
+  "workbench.colorTheme": "Dark Modern One bordered",
+  "workbench.productIconTheme": "material-product-icons",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontLigatures": false, // Disabling to improve terminal rendering
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.enableMultiLinePasteWarning": false, // Reduces warnings in terminal
+  "terminal.integrated.smoothScrolling": false, // Disabling for faster terminal performance
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "tabnine.experimentalAutoImports": false, // Disabling auto-imports for performance
+  "debug.toolBarLocation": "hidden", // Hides the debug toolbar for a cleaner UI
+  "code-runner.runInTerminal": true,
+  "workbench.enableExperiments": false, // Disabling experiments for stability
+  "workbench.settings.enableNaturalLanguageSearch": false, // Disabling AI-based search for better speed
+  "workbench.editor.enablePreview": false // Prevents VS Code from constantly reloading files
+}
