@@ -1,62 +1,79 @@
 {
-  // appearance
-  "editor.fontFamily": "Jetbrains Mono",
-  // choose what you like! I like tabs
-  "workbench.editor.showTabs": "multiple",
-  // if you opt for tabs :)
-  "window.density.editorTabHeight": "compact",
-  // "window.restoreWindows": "none",
-  "editor.tabSize": 2,
+  // --------------------------
+  // Appearance & Editor Settings
+  // --------------------------
+  "editor.fontFamily": "Jetbrains Mono", // Set the editor's font family to "JetBrainsMono Nerd font"
+  "workbench.editor.showTabs": "multiple", // Display multiple tabs in the editor
+  "window.density.editorTabHeight": "compact", // Use a compact height for editor tabs
+  // "window.restoreWindows": "none", // (Commented out) Option to restore windows on startup
+  "editor.tabSize": 2, // Set tab size to 2 spaces
   "editor.quickSuggestions": {
-    "other": true,
-    "comments": false,
-    "strings": true
-  }, // Disables unwanted suggestions
+    "other": true, // Enable quick suggestions for code
+    "comments": false, // Disable quick suggestions within comments
+    "strings": true // Enable quick suggestions within strings
+  }, // Quick suggestions configuration
 
-  // ---------------My Personal Settings---------------
-  "workbench.tree.renderIndentGuides": "none", // Reduces UI rendering load
-  "workbench.statusBar.visible": false, // Hides status bar to save resources
-  "chat.commandCenter.enabled": false,
-  "workbench.navigationControl.enabled": false,
-  "workbench.startupEditor": "none", // No welcome page = faster startup
-  "workbench.tips.enabled": false, // Disable VS Code tips for performance
-  "editor.guides.bracketPairs": false, // Improves performance by reducing UI rendering
-  "editor.fontLigatures": false, // Disabling can improve rendering speed
-  "editor.renderWhitespace": "none",
-  "editor.renderLineHighlight": "none",
-  "editor.stickyScroll.enabled": false,
-  "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.verticalScrollbarSize": 4, // Smaller scrollbar for less UI lag
-  "editor.cursorBlinking": "solid",
-  "editor.cursorSmoothCaretAnimation": "off", // Turning off for better typing response
-  "editor.smoothScrolling": false, // Improves performance on large files
-  "editor.inlineSuggest.enabled": false, // Disables AI suggestions for better speed
-  "editor.parameterHints.enabled": false, // Disables hints for a cleaner UI
-  "editor.codeLens": false, // **Disabling minimap improves performance**
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "liveServer.settings.donotVerifyTags": true,
-  "window.menuBarVisibility": "toggle",
-  "files.autoSave": "onWindowChange",
-  "window.commandCenter": false,
-  "comments.useRelativeTime": false,
-  "workbench.layoutControl.enabled": false,
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.smoothScrolling": false, // Disabling for faster terminal performance
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  "explorer.compactFolders": false,
-  "security.workspace.trust.untrustedFiles": "open",
-  "debug.toolBarLocation": "hidden", // Hides the debug toolbar for a cleaner UI
-  "code-runner.runInTerminal": true,
-  "workbench.enableExperiments": false, // Disabling experiments for stability
-  "workbench.settings.enableNaturalLanguageSearch": false, // Disabling AI-based search for better speed
-  "workbench.editor.enablePreview": false,
-  "editor.minimap.maxColumn": 60,
-  "editor.wordWrap": "on",
-  "editor.minimap.showSlider": "always",
-  "workbench.colorTheme": "One Dark Pro Night Flat",
-  "workbench.activityBar.location": "top" // Prevents VS Code from constantly reloading files
+  // --------------------------
+  // My Personal Settings
+  // --------------------------
+  "workbench.tree.renderIndentGuides": "none", // Hide indent guides in the file tree for performance
+  "chat.commandCenter.enabled": false, // Disable the chat command center
+  "workbench.navigationControl.enabled": false, // Disable the navigation control in the workbench
+  "workbench.startupEditor": "none", // Disable the welcome/startup page for faster startup
+  "workbench.tips.enabled": false, // Disable VS Code tips to improve performance
+  "editor.guides.bracketPairs": false, // Disable bracket pair guides to reduce UI rendering load
+  "editor.fontLigatures": true, // Disable font ligatures which can improve rendering speed
+  "editor.renderWhitespace": "none", // Do not render whitespace characters
+  "editor.renderLineHighlight": "none", // Do not highlight the current line
+  "editor.stickyScroll.enabled": false, // Disable sticky scrolling for a simpler UI
+  "editor.scrollbar.horizontal": "hidden", // Hide horizontal scrollbar in the editor
+  "editor.scrollbar.verticalScrollbarSize": 4, // Use a smaller vertical scrollbar to reduce UI lag
+  "editor.cursorBlinking": "solid", // Disable smooth caret animation for better typing response
+  "editor.smoothScrolling": false, // Disable smooth scrolling to improve performance on large files
+  "editor.inlineSuggest.enabled": false, // Disable inline suggestions (AI suggestions) to speed up performance
+  "editor.parameterHints.enabled": false, // Disable parameter hints for a cleaner UI
+  "editor.codeLens": false, // Disable CodeLens (e.g., inline references) to improve performance
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Set Prettier as the default code formatter
+  "editor.formatOnSave": true, // Format the document automatically on save
+  "liveServer.settings.donotShowInfoMsg": true, // Suppress informational messages from Live Server
+  "liveServer.settings.donotVerifyTags": true, // Set the menu bar to toggle visibility on demand
+  "files.autoSave": "onWindowChange", // Automatically save files when the window loses focus
+  "window.commandCenter": false, // Disable the command center in the window
+  "comments.useRelativeTime": false, // Use absolute time for comments rather than relative time
+  "workbench.layoutControl.enabled": false, // Disable layout control for a simpler interface
+  "terminal.integrated.defaultProfile.windows": "Git Bash", // Set Git Bash as the default terminal on Windows
+  "terminal.integrated.cursorStyle": "line", // Set the integrated terminal's cursor style to line
+  "terminal.integrated.smoothScrolling": false, // Disable smooth scrolling in the terminal for improved performance
+  "explorer.confirmDragAndDrop": false, // Disable confirmation when dragging and dropping files in the explorer
+  "explorer.confirmDelete": false, // Disable confirmation when deleting files in the explorer
+  "explorer.compactFolders": false, // Do not compact folders in the file explorer
+  "security.workspace.trust.untrustedFiles": "open", // Automatically open untrusted files in the workspace
+  "debug.toolBarLocation": "hidden", // Hide the debug toolbar for a cleaner UI
+  "code-runner.runInTerminal": true, // Run code using Code Runner in the integrated terminal
+  "workbench.enableExperiments": false, // Disable experimental features for better stability
+  "workbench.settings.enableNaturalLanguageSearch": false, // Disable AI-based natural language search to improve speed
+  "workbench.editor.enablePreview": false, // Disable preview mode for editors so files open in a full tab
+  "editor.minimap.maxColumn": 60, // Limit the minimap's width to 60 columns
+  "editor.wordWrap": "on", // Enable word wrap in the editor
+  "editor.minimap.showSlider": "always", // Enable GPU acceleration for the integrated terminal
+  "material-icon-theme.hidesExplorerArrows": false, // Disable breadcrumbs to prevent frequent file reloading
+
+  // --------------------------
+  // Editor Font Settings
+  // --------------------------
+  "editor.fontSize": 17,
+  "glassit.alpha": 255,
+  "symbols.hidesExplorerArrows": false, // Set the editor font size to 15
+  // extra customization
+  "workbench.colorCustomizations": {
+    "sideBar.border": "#fff"
+    // "sideBar.background": "#111111"
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "editor.cursorWidth": 3,
+  "editor.minimap.renderCharacters": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Yukinord"
 }
